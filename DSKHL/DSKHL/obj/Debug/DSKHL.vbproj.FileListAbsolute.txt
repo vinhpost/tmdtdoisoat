@@ -30,3 +30,7 @@ D:\ChuongTrinh\DSKHL\DSKHL\DSKHL\obj\Debug\DSKHL.QuanLyDanhMuc_form.resources
 D:\ChuongTrinh\DSKHL\DSKHL\DSKHL\obj\Debug\DSKHL.QuanLyData_form.resources
 D:\ChuongTrinh\DSKHL\DSKHL\DSKHL\obj\Debug\DSKHL.QuanLyBc_form.resources
 D:\ChuongTrinh\DSKHL\DSKHL\DSKHL\obj\Debug\DSKHL.TimKiemForm.resources
+D:\ChuongTrinh\DSKHL\tmdtdoisoat\DSKHL\DSKHL\bin\Debug\DSKHL.exe.config
+D:\ChuongTrinh\DSKHL\tmdtdoisoat\DSKHL\DSKHL\obj\Debug\DSKHL.exe
+D:\ChuongTrinh\DSKHL\tmdtdoisoat\DSKHL\DSKHL\obj\Debug\DSKHL.xml
+D:\ChuongTrinh\DSKHL\tmdtdoisoat\DSKHL\DSKHL\obj\Debug\DSKHL.pdb
