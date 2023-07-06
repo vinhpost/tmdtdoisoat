@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A548349-DF17-477C-BA4A-C6A6A13AA02E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DSKHL.My.MyApplication</StartupObject>
+    <RootNamespace>DSKHL</RootNamespace>
+    <AssemblyName>DSKHL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DSKHL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DSKHL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.BonusSkins.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.Charts.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.DataAccess.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.DataAccess.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.Office.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.PivotGrid.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.RichEdit.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.Snap.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.Sparkline.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.Utils.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraBars.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraCharts.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraLayout.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraPivotGrid.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraReports.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraRichEdit.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraRichEdit.v15.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraScheduler.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraScheduler.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Reporting.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraScheduler.v15.1.Reporting.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraTreeList.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraVerticalGrid.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DoiSoat\DevExpress.XtraWizard.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>C:\Program Files (x86)\DoiSoat\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\DoiSoat\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChonCot.Designer.vb">
+      <DependentUpon>ChonCot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChonCot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChonDm_Form.designer.vb">
+      <DependentUpon>ChonDm_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChonDm_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.Designer.vb">
+      <DependentUpon>frmDoiMatKhau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetBooleanValue_form.Designer.vb">
+      <DependentUpon>GetBooleanValue_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetBooleanValue_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetNgay_form.designer.vb">
+      <DependentUpon>GetNgay_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetNgay_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetNumberValue_form.Designer.vb">
+      <DependentUpon>GetNumberValue_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetNumberValue_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetStringValue_form.Designer.vb">
+      <DependentUpon>GetStringValue_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetStringValue_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetThangNam_Form.designer.vb">
+      <DependentUpon>GetThangNam_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetThangNam_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetTuNgay_form.Designer.vb">
+      <DependentUpon>GetTuNgay_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetTuNgay_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetValue_form.designer.vb">
+      <DependentUpon>GetValue_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetValue_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyBc_form.Designer.vb">
+      <DependentUpon>QuanLyBc_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyBc_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NapSoLieu_form.Designer.vb">
+      <DependentUpon>NapSoLieu_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NapSoLieu_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyDanhMuc_form.Designer.vb">
+      <DependentUpon>QuanLyDanhMuc_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyDanhMuc_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyData_form.Designer.vb">
+      <DependentUpon>QuanLyData_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyData_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunMe1st_form.Designer.vb">
+      <DependentUpon>RunMe1st_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RunMe1st_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiem.designer.vb">
+      <DependentUpon>TimKiem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiemForm.Designer.vb">
+      <DependentUpon>TimKiemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_form.Designer.vb">
+      <DependentUpon>User_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm.designer.vb">
+      <DependentUpon>WaitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\vn.vnpost.ws\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChonCot.resx">
+      <DependentUpon>ChonCot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChonDm_Form.resx">
+      <DependentUpon>ChonDm_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetBooleanValue_form.resx">
+      <DependentUpon>GetBooleanValue_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetNgay_form.resx">
+      <DependentUpon>GetNgay_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetNumberValue_form.resx">
+      <DependentUpon>GetNumberValue_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetStringValue_form.resx">
+      <DependentUpon>GetStringValue_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetThangNam_Form.resx">
+      <DependentUpon>GetThangNam_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetTuNgay_form.resx">
+      <DependentUpon>GetTuNgay_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetValue_form.resx">
+      <DependentUpon>GetValue_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyBc_form.resx">
+      <DependentUpon>QuanLyBc_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NapSoLieu_form.resx">
+      <DependentUpon>NapSoLieu_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDanhMuc_form.resx">
+      <DependentUpon>QuanLyDanhMuc_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyData_form.resx">
+      <DependentUpon>QuanLyData_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunMe1st_form.resx">
+      <DependentUpon>RunMe1st_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem.resx">
+      <DependentUpon>TimKiem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemForm.resx">
+      <DependentUpon>TimKiemForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_form.resx">
+      <DependentUpon>User_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm.resx">
+      <DependentUpon>WaitForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Web References\vn.vnpost.ws\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\vn.vnpost.ws\TrackAndTrace.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://ws.vnpost.vn/TrackAndTrace/TrackAndTrace.asmx%3fop=TrackAndTrace_Items_Arr_wTable">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\vn.vnpost.ws\</RelPath>
+      <UpdateFromURL>https://ws.vnpost.vn/TrackAndTrace/TrackAndTrace.asmx%3fop=TrackAndTrace_Items_Arr_wTable</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DSKHL_vn_vnpost_ws_TrackAndTrace</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\vn.vnpost.ws\TrackAndTrace.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
